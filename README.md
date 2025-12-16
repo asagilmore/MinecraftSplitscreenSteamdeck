@@ -7,6 +7,15 @@ may break with future updates.
 The locked-version branch uses a fixed PollyMC link, from the main PollyMC github,
 which should exist for a while.
 
+I don't think the releases compiled here so use the wget commit below to
+download the installer.
+
+```sh
+wget https://raw.githubusercontent.com/asagilmore/MinecraftSplitscreenSteamdeck/main/install-minecraft-splitscreen.sh
+chmod +x install-minecraft-splitscreen.sh
+./install-minecraft-splitscreen.sh
+```
+
 # Minecraft Splitscreen Steam Deck & Linux Installer
 
 This project provides an easy way to set up splitscreen Minecraft on Steam Deck and Linux using an optimized dual-launcher approach. It supports 1–4 players, controller detection, and seamless integration with Steam Game Mode and your desktop environment.
@@ -96,7 +105,7 @@ This hybrid approach ensures reliable automated installation while providing the
 1. **Download and run the installer:**
    - You can get the latest installer script from the [Releases section](https://github.com/FlyingEwok/MinecraftSplitscreenSteamdeck/releases) (recommended for stable versions), or use the latest development version with:
    ```sh
-   wget https://raw.githubusercontent.com/FlyingEwok/MinecraftSplitscreenSteamdeck/main/install-minecraft-splitscreen.sh
+   wget https://raw.githubusercontent.com/asagilmore/MinecraftSplitscreenSteamdeck/main/install-minecraft-splitscreen.sh
    chmod +x install-minecraft-splitscreen.sh
    ./install-minecraft-splitscreen.sh
    ```

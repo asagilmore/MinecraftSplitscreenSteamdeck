@@ -1,10 +1,10 @@
 # Patch
-The original code uses a hardcoded link for PollyMC, which has broken.
+The original code uses a hardcoded link for PollyMC, which has gone down.
 
 I have updated the code to pull the latest release of PollyMC, though compatibility
 may break with future updates.
 
-The hardcoded branch uses a fixed PollyMC version, from the main PollyMC github,
+The locked-version branch uses a fixed PollyMC link, from the main PollyMC github,
 which should exist for a while.
 
 # Minecraft Splitscreen Steam Deck & Linux Installer

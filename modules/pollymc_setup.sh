@@ -55,10 +55,7 @@ setup_pollymc() {
     # AppImage format provides universal Linux compatibility without dependencies
     # PollyMC GitHub releases API endpoint for latest version
     # We download the x86_64 Linux AppImage which works on most modern Linux systems
-    local pollymc_url="$(
-    curl -s https://api.github.com/repos/PolyMC/PolyMC/releases/latest |
-        jq -r '.assets[] | select(.name | test("PolyMC-Linux-.*-x86_64.AppImage$")) | .browser_download_url'
-    )"
+    local pollymc_url="https://github.com/PolyMC/PolyMC/releases/download/7.0/PolyMC-Linux-7.0-x86_64.AppImage"
 
     print_progress "Fetching PollyMC from GitHub releases: $(basename "$pollymc_url")..."
 

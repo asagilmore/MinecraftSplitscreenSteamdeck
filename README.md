@@ -1,3 +1,12 @@
+# Patch
+The original code uses a hardcoded link for PollyMC, which has broken.
+
+I have updated the code to pull the latest release of PollyMC, though compatibility
+may break with future updates.
+
+The hardcoded branch uses a fixed PollyMC version, from the main PollyMC github,
+which should exist for a while.
+
 # Minecraft Splitscreen Steam Deck & Linux Installer
 
 This project provides an easy way to set up splitscreen Minecraft on Steam Deck and Linux using an optimized dual-launcher approach. It supports 1–4 players, controller detection, and seamless integration with Steam Game Mode and your desktop environment.
@@ -91,7 +100,7 @@ This hybrid approach ensures reliable automated installation while providing the
    chmod +x install-minecraft-splitscreen.sh
    ./install-minecraft-splitscreen.sh
    ```
-   
+
    **Note:** The installer will automatically detect which Java version you need based on your selected Minecraft version and install it if not present. No manual Java setup required!
 
 2. **Install Python 3 (optional)**
@@ -115,7 +124,7 @@ This hybrid approach ensures reliable automated installation while providing the
      - Handle mod conflicts and suggest alternatives when needed
      - Show progress for each mod download with success/failure status
      - Report any missing mods at the end if compatible versions aren't found
-   - **Steam integration (optional):** 
+   - **Steam integration (optional):**
      - Choose "y" to add a shortcut to Steam for easy access from Game Mode on Steam Deck
      - Choose "n" if you prefer to launch manually or don't use Steam
    - **Desktop launcher (optional):**

@@ -37,7 +37,7 @@ detectLauncher() {
         export LAUNCHER_NAME="PollyMC"
         return 0
     fi
-    
+
     echo "[Error] PollyMC not found at $HOME/.local/share/PollyMC/" >&2
     echo "[Error] Please run the Minecraft Splitscreen installer to set up PollyMC" >&2
     return 1
@@ -56,7 +56,7 @@ echo "[Info] Using $LAUNCHER_NAME for splitscreen gameplay"
 # =============================
 # Checks if this script is the latest version from GitHub. If not, downloads and replaces itself.
 selfUpdate() {
-    local repo_url="https://raw.githubusercontent.com/FlyingEwok/MinecraftSplitscreenSteamdeck/main/minecraftSplitscreen.sh"
+    local repo_url="https://raw.githubusercontent.com/asagilmore/MinecraftSplitscreenSteamdeck/main/minecraftSplitscreen.sh"
     local tmpfile
     tmpfile=$(mktemp)
     local script_path
